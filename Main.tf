@@ -35,7 +35,7 @@ resource "aws_iam_user" "users" {
   name = each.key
 }  
 
-# Add users to the group
+# Add users to the group!
 
 resource "aws_iam_group_membership" "membership" {
   
@@ -65,3 +65,6 @@ output "access_keys" {
   }
   sensitive = true
 }
+
+
+# new-features addition
